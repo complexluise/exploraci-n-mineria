@@ -1,10 +1,10 @@
-# README: Proyecto de Ciencia de Redes
+Ciencia de redes en mineria visible 
 
 Este proyecto analiza datos de explotación de minerales en Colombia mediante redes bipartitas y de coocurrencia. Genera visualizaciones y exporta los resultados en formato `GraphML`.
 
 ---
 
-## Requisitos Previos
+## Requisitos previos
 
 Asegúrese de tener instalado lo siguiente en su sistema:
 
@@ -14,9 +14,9 @@ Asegúrese de tener instalado lo siguiente en su sistema:
 
 ---
 
-## Configuración del Entorno Virtual
+## Configuración del entorno virtual
 
-### 1. Crear un Entorno Virtual
+### 1. Crear un entorno virtual
 
 1. Navegue al directorio del proyecto.
 2. Ejecute el siguiente comando para crear un entorno virtual:
@@ -35,7 +35,7 @@ Asegúrese de tener instalado lo siguiente en su sistema:
      source venv/bin/activate
      ```
 
-### 2. Instalar Dependencias
+### 2. Instalar dependencias
 
 Con el entorno virtual activado, instale las dependencias requeridas:
 
@@ -45,7 +45,7 @@ pip install -r requirements.txt
 
 ---
 
-## Estructura del Proyecto
+## Estructura del proyecto
 
 - `notebook.ipynb`: Jupyter Notebook principal con el análisis.
 - `datos/raw/`: Carpeta que contiene los datos sin procesar.
@@ -54,9 +54,9 @@ pip install -r requirements.txt
 
 ---
 
-## Ejecución del Proyecto
+## Ejecución del proyecto
 
-### 1. Preparar los Datos
+### 1. Preparar los datos
 
 Coloque el archivo de datos en la carpeta `datos/raw/`. El archivo esperado debe tener un formato CSV con columnas como:
 - `municipio`
@@ -64,7 +64,7 @@ Coloque el archivo de datos en la carpeta `datos/raw/`. El archivo esperado debe
 - `valor_contraprestacion`
 - `cantidad_produccion`
 
-### 2. Ejecutar el Análisis
+### 2. Ejecutar el análisis
 
 Abra el archivo Jupyter Notebook en su navegador:
 
@@ -74,29 +74,9 @@ jupyter notebook
 
 Navegue al archivo `notebook.ipynb` y ejecúte las celdas paso a paso.
 
-### 3. Guardar y Exportar Resultados
+### 3. Guardar y exportar resultados
 
 Los resultados se guardarán en `datos/processed/`:
 - `red_bipartita_municipios_recursos.graphml`
 - `coocurrencia_recursos.graphml`
 - `coocurrencia_municipios.graphml`
-
----
-
-## Preguntas Frecuentes
-
-### ¿Cómo reinstalar las dependencias si algo falla?
-
-Ejecute:
-
-```bash
-pip install --force-reinstall -r requirements.txt
-```
-
-### ¿Qué hacer si no tengo `virtualenv` instalado?
-
-Instálelo con:
-
-```bash
-pip install virtualenv
-```
