@@ -1,4 +1,4 @@
-Ciencia de redes en mineria visible 
+# Ciencia de redes en mineria visible 
 
 Este proyecto analiza datos de explotación de minerales en Colombia mediante redes bipartitas y de coocurrencia. Genera visualizaciones y exporta los resultados en formato `GraphML`.
 
